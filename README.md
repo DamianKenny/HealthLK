@@ -32,9 +32,9 @@ Whether you're new to an area or just tired of endlessly Googling for healthcare
 
 ## Preview
 
-![Homepage Preview](../Pictures/Screenshots/health-home.png)
-![Homepage Preview](../Pictures/Screenshots/health-map.png)
-![Homepage Preview](../Pictures/Screenshots/health-medicine.png.)
+![Homepage Preview](../images/health-home.png)
+![Homepage Preview](../images/health-map.png)
+![Homepage Preview](../images/health-doctor.png)
 
 > _“Because a map speaks louder than a thousand words.”_ 🦇
 
