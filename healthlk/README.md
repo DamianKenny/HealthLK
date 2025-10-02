@@ -1,75 +1,79 @@
-# React + TypeScript + Vite
+# 🏥 HealthLK
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+_A smarter way to access healthcare services in Sri Lanka_
 
-Currently, two official plugins are available:
+HealthLK is a personal project built to help users **find hospitals, clinics, pharmacies, doctors, and medicines** around their current location—quickly and accurately.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Whether you're new to an area or just tired of endlessly Googling for healthcare info, HealthLK makes the process simple, fast, and reliable.
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## Features
 
-Note: This will impact Vite dev & build performances.
+- **Interactive Map** using [MapLibre](https://maplibre.org) to display real-time locations of hospitals, clinics, and pharmacies.
+- **Location-based search** to find nearby healthcare facilities instantly.
+- **Doctor availability lookup**, making it easier to plan visits.
+- **Medicine availability tracking**, showing where specific medicines are stocked.
+- **Real user ratings** for hospitals and clinics to build trust and transparency.
+- **Fast and responsive UI** built with modern frontend tools.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Tech Stack
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+| Technology       | Purpose                                                               |
+| ---------------- | --------------------------------------------------------------------- |
+| **React**        | Core frontend framework for building the interface and handling state |
+| **CSS**          | For base styling and structure                                        |
+| **Tailwind CSS** | Utility-first CSS framework for rapid UI design                       |
+| **MapLibre**     | Open-source mapping library used to display and interact with maps    |
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+---
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+## Preview
+
+![Homepage Preview](../Pictures/Screenshots/health-home.png)
+![Homepage Preview](../Pictures/Screenshots/health-map.png)
+![Homepage Preview](../Pictures/Screenshots/health-medicine.png.)
+
+> _“Because a map speaks louder than a thousand words.”_ 🦇
+
+---
+
+## Getting Started
+
+Follow these steps to run **HealthLK** locally:
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/yourusernamedamiankenny/healthlk-healthcare-locator.git
+cd healthlk
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install
 ```
+
+### 3. Run the development server
+
+```bash
+npm start
+```
+
+Visit `http://localhost:3000` to see the project in action.
+
+---
+
+## Contributing
+
+Contributions, feedback, and ideas are always welcome!  
+If you'd like to improve **HealthLK**, feel free to fork the repo and submit a pull request.
+
+---
+
+## License
+
+This project is licensed under the MIT License — see the [LICENSE](LICENSE) file for details.
